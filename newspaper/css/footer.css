@@ -1,0 +1,118 @@
+footer {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    position: relative;
+}
+
+footer h1 {
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    margin: 10px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+footer h1:hover {
+    color: #cc0000;
+}
+
+#footer-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "news arts lifestyle opinion more account-info";
+
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+  
+#news { 
+    grid-area: news; 
+    list-style-type: none;
+}
+
+#news ul, #arts ul, #lifestyle ul, #opinion ul, #more ul, #account-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#news li, #arts li, #lifestyle li, #opinion li, #more li, #account-info li {
+    padding-bottom: 7.5px;
+}
+
+#news li:hover, #arts li:hover, #lifestyle li:hover, #opinion li:hover, #more li:hover, #account-services li:hover, #subscription-options li:hover, #additional-services li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}  
+
+#arts { 
+    grid-area: arts; 
+}
+  
+#lifestyle { 
+    grid-area: lifestyle; 
+}
+  
+#opinion { 
+    grid-area: opinion; 
+}
+  
+#more { 
+    grid-area: more; 
+}
+  
+#account-info { 
+    padding-left: 16px;
+    grid-area: account-info; 
+    border-left: 1px gray solid;
+}
+
+#account-services ul {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+#subscription-options {
+    font-size: 12px;
+    border-bottom: gray 1px solid;
+    margin-bottom: 10px;
+}
+
+#additional-services {
+    font-size: 12px;
+}
+
+#legal-information {
+    display: flex;
+    justify-content: center;
+}
+
+#legal-information ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 10px;
+    font-style: normal;    
+    color: rgba(128, 128, 128, 0.728);
+    padding-left: 0;
+}
+
+#legal-information li {
+    margin: 10px;
+}
+
+#legal-information li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}  
+
+  

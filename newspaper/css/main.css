@@ -1,0 +1,585 @@
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    padding: 0%;
+    margin: 0%;
+}
+
+.work-sans {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+#front-news { 
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "main-headline ads"; 
+    margin-top: 2.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-bottom: solid black 2px; 
+}
+  
+#top-headline {
+    grid-area: main-headline; 
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.2fr 0.8fr; 
+    grid-template-areas: 
+      "headline game-photo"
+      "player-stats player-comments"; 
+}
+
+
+#top-headline h2 { 
+    grid-area: headline; 
+    font-size: 30px;
+}
+
+#top-headline p { 
+    grid-area: headline; 
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+}
+
+#top-headline h2:hover, .headline-title:hover, .side-title:hover {
+    color: rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+}
+
+#top-headline p:hover, #headline-photo:hover, .side-photos:hover, .extra-photo:hover {
+    cursor: pointer;
+}
+
+#headline-photo { 
+    grid-area: game-photo; 
+    width: 375px;
+    height: 440px;
+    margin-right: 10px;
+    padding-right: 10px;
+    object-fit: cover;
+    padding-top: 4px;
+}
+
+#player-stats { 
+    grid-area: player-stats; 
+    width: 375px;
+    line-height: 2;
+    padding-right: 20px;
+    border-top: rgba(128, 128, 128, 0.568) solid 2px;
+    margin-right: 20px;
+    margin-bottom: 7rem;
+}
+
+#player-stats p{
+    font-size: 15px;
+}
+
+#player-comments { 
+    grid-area: player-comments; 
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+#player-comment-description {
+    text-align: center;
+}
+
+#player-quote {
+    font-style: italic;
+    text-align: center;
+} 
+
+#main-ad { 
+    grid-area: ads;  
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    border-left: solid rgba(128, 128, 128, 0.568) 1.5px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.ad-title {
+    font-weight: bold;
+    align-content: center;
+    text-wrap: nowrap;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.ad-description {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(88, 88, 88);
+}
+
+.ad-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#finance-science-arts {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.2fr 0.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas:
+      "finance-article-1 finance-photo-1 side-articles"
+      "finance-article-2 finance-photo-2 side-articles";
+    margin-top: 2.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-bottom: solid black 2px; 
+    padding-bottom: 20px;
+}
+
+#finance-article-1 { 
+    grid-area: finance-article-1; 
+    border-bottom: solid gray 1px;    
+}
+
+#nyc-market { 
+    grid-area: finance-photo-1; 
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-bottom: solid gray 1px; 
+    margin-right: 1.5rem;
+    padding-bottom: 100px;
+}
+
+#nyc-market:hover,  #currencies:hover, #wildfire:hover{ 
+    cursor: pointer;
+ }
+
+#finance-article-2 {  
+    grid-area: finance-article-2;
+}
+
+#currencies {
+    grid-area: finance-photo-2; 
+    position: relative;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.headline-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.headline-description {
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+}
+
+.headline-description:hover, .side-description:hover {
+    cursor: pointer;
+}
+
+#updates {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+#updates:hover {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+}
+  
+#stock-market { 
+    line-height: 3;
+}
+
+#stock-market:hover {
+    color: rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+}
+
+.side-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.side-description {
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+
+.side-articles { 
+    grid-area: side-articles;
+    border-left: solid rgba(128, 128, 128, 0.568) 1.5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+.side-photos-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: solid rgba(128, 128, 128, 0.568) 1.5px;
+}
+
+.side-photos {
+    width: 150px;
+    height:150px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+#live {
+    font-size: 20px;
+    color: #CC0000;
+}
+
+#live:hover{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topic {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#other-headlines {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "current-events current-event-picture opinion-articles"
+      "current-events politics opinion-articles";
+
+      margin-top: 2.5rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
+      border-bottom: solid black 2px;
+      padding-bottom: 20px;
+
+
+
+}
+  
+#current-events { 
+    grid-area: current-events;
+} 
+  
+#politics { 
+    grid-area: politics;  
+    margin-left: 30px;  
+}
+
+#politics h2 {
+    font-size: 20px;
+}
+
+#politics p {
+    font-size: 15px;
+    border: none;
+    margin-right: 20px;
+}
+
+#politics-1 {
+    font-size: 15px;
+    border-bottom: solid rgba(128, 128, 128, 0.568) 1.5px;
+    margin-right: 20px;
+}
+
+#politics-2 {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+  
+#opinion-articles { 
+    grid-area: opinion-articles; 
+    border-left: solid rgba(128, 128, 128, 0.568) 1.5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+#wildfire {
+    margin-left: 30px;
+    width: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    padding-bottom: 25px;
+    border-bottom: solid gray 1px; 
+    margin-right: 1.5rem;
+}
+
+#extra {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "world-news us-news us-politics raleigh business"
+      "tech science sports climate education"
+      "health movies tv music food"
+      "travel real-estate pop-culture video-games books";
+
+      margin-left: 15rem;
+      margin-right: 15rem;
+      border-bottom: solid black 2px;
+      padding-bottom: 20px;
+}
+
+#extra h5 {
+    font-weight: 400;
+}
+
+#extra h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.extra-photo {
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+#extra h5 {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 15px;
+
+}
+
+#extra h6 {
+    font-size: 15px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#extra h6:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+#world-news { 
+    grid-area: world-news; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#us-news { 
+    grid-area: us-news; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#us-politics { 
+    grid-area: us-politics; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#raleigh { 
+    grid-area: raleigh; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#business { 
+    grid-area: business;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#tech { 
+    grid-area: tech; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#science { 
+    grid-area: science; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#sports { 
+    grid-area: sports; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#climate { 
+    grid-area: climate;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#education { 
+    grid-area: education; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#health { 
+    grid-area: health;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;  
+}
+  
+#movies { 
+    grid-area: movies;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;  
+}
+  
+#tv { 
+    grid-area: tv; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+   
+  
+#music { 
+    grid-area: music; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left; 
+}
+  
+#food { 
+    grid-area: food;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
+#travel { 
+    grid-area: travel;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;  
+}
+  
+#real-estate { 
+    grid-area: real-estate;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;  
+}
+  
+#pop-culture { 
+    grid-area: pop-culture;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;  
+}
+  
+#video-games { 
+    grid-area: video-games;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left; 
+}
+  
+#books { 
+    grid-area: books;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: left;
+}
+  
